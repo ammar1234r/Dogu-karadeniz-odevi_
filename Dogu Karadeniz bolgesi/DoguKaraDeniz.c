@@ -1,3 +1,4 @@
+//442881 Ammar Daaas
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -47,7 +48,7 @@ bool IsCity_Availbl(short PostCode, struct stArea* AreaInFile) {
 struct stArea ConvertFromFileToStruct() {
     struct stArea AreasInFile;
     AreasInFile.Is_code_availab = false;  
-    short PostCode = ReadPostCode("Lütfen bir posta kodu girin: ");
+    short PostCode = ReadPostCode("LÃ¼tfen bir posta kodu girin: ");
     FILE* file = fopen(FILE_NAME, "r");
     if (file == NULL) {
         printf("Dosya aciklanmadi: %s\n", FILE_NAME);
